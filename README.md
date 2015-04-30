@@ -11,13 +11,13 @@ Due to licensing restrictions, I can't provide rpm or even srpm packages, so a b
 
 Do not think that I do this for a living, or that I have the time to tackle other drivers, or other versions of Canon's driver. This has been a sort of an exercise for me, plus an online note to self. If someone happens to find this useful, then I'll be happy. 
 
-I have tested my packages on F20, both x86_64 and i686. I have no idea if these modifications might work with previous or later versions of the driver. I can not guarantee that my patches will work for you, even if you are on the same distro version and architecture. I can not even guarantee that they won't murder you in your sleep.
+I have tested my packages on F20 and F21, both x86_64 and i686. I have no idea if these modifications might work with previous or later versions of the driver. I can not guarantee that my patches will work for you, even if you are on the same distro version and architecture. I can not even guarantee that they won't murder you in your sleep.
 ___
 ##How to install:
 
 1. You need to have autoconf, automake, gcc-c++ and rpmbuild installed. All other dependencies will be pulled in automatically.
 
-2. If you do not have that already, create a folder named **rpmbuild** in your home folder. In it, create two subfolders, one called **SOURCES** and the other one **SPECS**. If your user is called john, there should be a /home/john/rpmbuild/SOURCES/ and a /home/john/rpmbuild/SPECS/.
+2. If you do not have that already, create a folder named **rpmbuild** in your home folder. In it, create two subfolders, one called **SOURCES** and the other one **SPECS**. If your user is called john, there should be a /home/john/rpmbuild/SOURCES/ and a /home/john/rpmbuild/SPECS/ (you could also have rpmdev-setuptree from the rpmdevtools package do that for you).
 
 3. Download the source tarball from [Canon](http://www.canon-europe.com/support/consumer_products/ "Canon Europe - Consumer Products Support") and place it in the SOURCES subfolder. Do the same for the patch (cnijfilter-3.80-1.f20.patch). Now download the spec file (cnijfilter-common.spec) and put it in SPECS.
 
