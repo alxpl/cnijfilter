@@ -19,7 +19,7 @@ ___
 
 2. If you do not have that already, create a folder named **rpmbuild** in your home folder. In it, create two subfolders, one called **SOURCES** and the other one **SPECS**. If your user is called john, there should be a /home/john/rpmbuild/SOURCES/ and a /home/john/rpmbuild/SPECS/ (you could also have rpmdev-setuptree from the rpmdevtools package do that for you).
 
-3. Download the source tarball from [Canon](http://www.canon-europe.com/support/consumer_products/ "Canon Europe - Consumer Products Support") and place it in the SOURCES subfolder. Do the same for the patch (cnijfilter-3.80-1.f20.patch). Now download the spec file (cnijfilter-common.spec) and put it in SPECS.
+3. Download the source tarball from [Canon](http://www.canon-europe.com/support/consumer_products/ "Canon Europe - Consumer Products Support") and place it in the SOURCES subfolder. Do the same for the patch (cnijfilter-3.80-1.libraries.patch). Now download the spec file (cnijfilter-common.spec) and put it in SPECS.
 
 4. As root, install dependencies:
 
