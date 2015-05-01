@@ -1,4 +1,4 @@
-%global checkout 20150430
+%global checkout 20150501
 %bcond_with prepare_fastbuild
 %bcond_with fastbuild
 %bcond_with build_common_package
@@ -37,11 +37,11 @@ Vendor:        CANON INC.
 Group:         Applications/Publishing
 URL:           http://www.canon.co.uk/Support/Consumer_Products/products/printers/InkJet/PIXMA_iP_series/PIXMA_iP7250.aspx?type=download&softwaredetailid=tcm:14-994531&os=Linux
 Source0:       http://gdlp01.c-wss.com/gds/3/0100004693/01/cnijfilter-source-%{VERSION}-%{RELEASE}.tar.gz
-Patch1:        cnijfilter-3.80-1.f20.patch
+Patch1:        cnijfilter-3.80-1.libraries.patch
 BuildRoot:     %{_tmppath}/%{name}-root
 #Requires:  cups popt
 Requires:      cnijfilter-common >= %{version} cups popt gtk2
-BuildRequires: gtk2-devel cups-devel popt-devel libtiff-devel libxml2-devel libtool
+BuildRequires: gtk2-devel cups-devel popt-devel libtiff-devel libxml2-devel libtool gettext
 
 %if %{with build_common_package}
 %package -n cnijfilter-common
@@ -358,6 +358,9 @@ fi
 %endif
 
 %changelog
+* Fri May 1 2015 Alexander Ploumistos <alexpl at fedoraproject.org> - 3.80-1.20150501
+- Add gettext dependency
+
 * Thu Apr 30 2015 Alexander Ploumistos <alexpl at fedoraproject.org> - 3.80-1.20150430
 - Clean up the spec file
 - Change naming scheme
