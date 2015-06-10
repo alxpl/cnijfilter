@@ -11,7 +11,7 @@ Due to licensing restrictions, I can't provide rpm or even srpm packages, so a b
 
 Do not think that I do this for a living, or that I have the time to tackle other drivers, or other versions of Canon's driver. This has been a sort of an exercise for me, plus an online note to self. If someone happens to find this useful, then I'll be happy. 
 
-I have tested my packages on F20 and F21, both x86_64 and i686. I have no idea if these modifications might work with previous or later versions of the driver. I can not guarantee that my patches will work for you, even if you are on the same distro version and architecture. I can not even guarantee that they won't murder you in your sleep.
+I have tested my packages on F20, F21 and F22, both x86_64 and i686. I have no idea if these modifications might work with previous or later versions of the driver. I can not guarantee that my patches will work for you, even if you are on the same distro version and architecture. I can not even guarantee that they won't murder you in your sleep.
 ___
 ##How to install:
 
