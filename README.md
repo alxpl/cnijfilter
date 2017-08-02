@@ -6,14 +6,14 @@ According to Canon, this driver supports MP230, MG2200, E510, MG3200, MG4200, iP
 
 I have corrected quite a number of errors and warnings during build/compilation. Checking with rpmlint, it is now down to 1 error and 8 warnings for the common package and 7 errors, 6 warnings for the printer-specific package. The rpms provided by Canon have 6 errors, 15 warnings and 177 errors, 51 warnings, respectively. Oh and they fail to install because of missing dependencies... Most of the changes in the patch file, particularly those concerning ipp and libpng, came from various, online sources and I adapted them to this version of the driver. Kudos to everyone that cleared the path for me. As for the changes in the spec file, they are the result of many hours of RTFM. I'm still learning, so feel free to drop me a line if you spot any shortcomings.
 
-###Disclaimer:
+### Disclaimer:
 Due to licensing restrictions, I can't provide rpm or even srpm packages, so a bit of manual labor is involved.
 
 Do not think that I do this for a living, or that I have the time to tackle other drivers, or other versions of Canon's driver. This has been a sort of an exercise for me, plus an online note to self. If someone happens to find this useful, then I'll be happy. 
 
 I have tested my packages on F20, F21 and F22, both x86_64 and i686. I have no idea if these modifications might work with previous or later versions of the driver. I can not guarantee that my patches will work for you, even if you are on the same distro version and architecture. I can not even guarantee that they won't murder you in your sleep.
 ___
-##How to install:
+## How to install:
 
 1. You need to have autoconf, automake, gcc-c++ and rpmbuild installed. All other dependencies will be pulled in automatically.
 
