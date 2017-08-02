@@ -51,10 +51,10 @@ If your printer is connected over the network, you can run
 
 which after a while will give you something like this:
 
-`networkcnijnet:/00-1A-2B-3C-4D-5E “Canon iP7200 series” “Canon-iP7200-series_00-1A-2B-3C-44-5F″`
+`networkcnijnet:/00-1A-2B-3C-4D-5E “Canon iP7200 series” “Canon-iP7200-series_00-1A-2B-3C-4D-5E″`
 
 The first part *networkcnijnet:/00-1A-2B-3C-4D-5E* is the device uri. You can use that when you set up your printer in your DE's printer configuration tool, or you can simply run (as root):
 
-`lpadmin -p canonip7200 -m canonip7200.ppd -v cnijnet:/00-1A-2B-3C-44-5F -E`
+`lpadmin -p canonip7200 -m canonip7200.ppd -v cnijnet:/00-1A-2B-3C-4D-5E -E`
 
 *_Note:_ Don't just guess the name for the ppd file, look in /usr/share/cups/model/.* 
