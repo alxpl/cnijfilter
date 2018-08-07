@@ -15,7 +15,7 @@ I have tested my packages on F20-F26, both x86_64 and i686. I have no idea if th
 ___
 ## How to install:
 
-1. You need to have autoconf, automake, gcc-c++ and rpmbuild installed. All other dependencies will be pulled in automatically.
+1. You need to have autoconf, automake, gcc-c++ and rpm-build installed. All other dependencies will be pulled in automatically.
 
 2. If you do not have that already, create a folder named **rpmbuild** in your home folder. In it, create two subfolders, one called **SOURCES** and the other one **SPECS**. If your user is called john, there should be a /home/john/rpmbuild/SOURCES/ and a /home/john/rpmbuild/SPECS/ (you could also have rpmdev-setuptree from the rpmdevtools package do that for you).
 
